@@ -1,0 +1,77 @@
+<%= form_with(model: round) do |form| %>
+  <% if round.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(round.errors.count, "error") %> prohibited this round from being saved:</h2>
+
+      <ul>
+        <% round.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :course %>
+    <%= form.text_field :course %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weather %>
+    <%= form.text_field :weather %>
+  </div>
+
+  <div class="field">
+    <%= form.label :date %>
+    <%= form.date_select :date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hole1 %>
+    <%= form.number_field :hole1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hole2 %>
+    <%= form.number_field :hole2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hole3 %>
+    <%= form.number_field :hole3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hole4 %>
+    <%= form.number_field :hole4 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hole5 %>
+    <%= form.number_field :hole5 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hole6 %>
+    <%= form.number_field :hole6 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hole7 %>
+    <%= form.number_field :hole7 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hole8 %>
+    <%= form.number_field :hole8 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hole9 %>
+    <%= form.number_field :hole9 %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

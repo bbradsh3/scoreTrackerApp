@@ -10,11 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_04_05_025258) do
+ActiveRecord::Schema.define(version: 2023_04_05_041918) do
 
-  create_table "projects", force: :cascade do |t|
-    t.string "title"
-    t.text "description"
+  create_table "rounds", force: :cascade do |t|
+    t.string "course"
+    t.string "weather"
+    t.date "date"
+    t.integer "hole1"
+    t.integer "hole2"
+    t.integer "hole3"
+    t.integer "hole4"
+    t.integer "hole5"
+    t.integer "hole6"
+    t.integer "hole7"
+    t.integer "hole8"
+    t.integer "hole9"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
