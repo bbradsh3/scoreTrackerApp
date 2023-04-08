@@ -1,1 +1,49 @@
 @import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+
+
+
+body {
+        background: #4eab3e;
+        color: black;
+        font-family: 'Merriweather', sans-serif;
+}
+h1,
+h2 {
+        font-weight: bold;
+}
+p {
+        font-size: 16px;
+        color: $white;
+}
+a.button {
+    background: transparent url('bg_button_a.gif') no-repeat scroll top right;
+    color: #444;
+    display: block;
+    float: left;
+    font: normal 12px arial, sans-serif;
+    height: 24px;
+    margin-right: 6px;
+    padding-right: 18px; /* sliding doors padding */
+    text-decoration: none;
+}
+a:visited {
+        color: blue;
+}
+.link {
+        color: blue;
+}
+.btn-primary {
+        color: $white;
+        border-color: $white;
+        margin-bottom: 5px;
+}
+.table {
+    background-color: white;
+    border: 5px;
+    border-color: black;
+    text-align: center;
+}
+.table th, td {
+    padding: 15px !important;
+}
