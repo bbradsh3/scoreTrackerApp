@@ -67,8 +67,10 @@ group :test do
   gem 'webdrivers'
   # addd per GE06
   gem 'simplecov', require: false
+  gem 'factory_bot_rails'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 #gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem 'tzinfo-data'
+
