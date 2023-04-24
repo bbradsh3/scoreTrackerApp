@@ -37,8 +37,11 @@
         <td><%= round.hole8 %></td>
         <td><%= round.hole9 %></td>
         <td><%= link_to 'Show', round %></td>
+      
+        <% if user_signed_in? %>
         <td><%= link_to 'Edit', edit_round_path(round) %></td>
         <td><%= link_to 'Destroy', round, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>
@@ -46,4 +49,6 @@
 
 <br>
 
+<% if user_signed_in? %>
 <%= link_to 'New Round', new_round_path %>
+<% end %>

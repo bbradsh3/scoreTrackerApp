@@ -29,6 +29,7 @@ RSpec.feature "Rounds", type: :feature do
           end
           click_button "Update Round"
           expect(page).to have_content("Weather can't be blank")
+
   
       end
     end
