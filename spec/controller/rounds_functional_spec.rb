@@ -37,4 +37,28 @@ RSpec.describe RoundsController, :type => :controller do
             # expect(response).to have_http_status(302) # Expects a HTTP Status code of 302
         end
     end
+
+    context "GET #create" do
+    # This should return the minimal set of attributes required to create a valid
+    # PROJECT. As you add validations to project, be sure to adjust the attributes here as well.
+    let(:valid_attributes) {
+        { :course => "Cottonwood", :weather => "sunny", :date => "April 24, 2023", :hole1 => "0", :hole2 => "0", :hole3 => "0", :hole4 => "0", :hole5 => "0", :hole6 => "0", :hole7 => "0", :hole8 => "0", :hole9 => "0" }
+    }
+
+
+    let(:valid_session) { {} }
+
+
+    describe "GET #create" do
+        it "returns a success response" do
+            Round.create! valid_attributes
+            get :index, params: {}, session: valid_session
+            expect(response).to have_http_status(:ok)
+        end
+    end
+
+
+end
+
+
 end
