@@ -41,6 +41,9 @@ group :development, :test do
   
   # added per assignment
   gem 'rspec-rails', '~> 4.1.0'
+
+  #add factory bot
+  gem 'factory_bot_rails'
 end
 
 group :development do

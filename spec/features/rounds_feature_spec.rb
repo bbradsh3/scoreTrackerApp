@@ -4,6 +4,8 @@ RSpec.feature "Rounds", type: :feature do
     context "Update rounds" do
       let(:round) { Round.create(course: "Cottonwood", weather: "sunny", date: "April 24, 2023", hole1: "0", hole2: "0", hole3: "0", hole4: "0", hole5: "0", hole6: "0", hole7: "0", hole8: "0", hole9: "0") }
       before(:each) do
+        user = FactoryBot.create(:user)
+        login_as(user)
         visit edit_round_path(round)
       end
  
