@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
 
 
-
 body {
         background-image: url('https://static.vecteezy.com/system/resources/previews/007/180/513/large_2x/top-view-fresh-green-grass-or-lawn-for-football-and-soccer-fields-or-golf-courses-or-grassland-for-use-to-make-background-or-wallpaper-garden-or-turf-the-fresh-field-for-a-ground-free-photo.jpg');
         background-attachment: fixed;
@@ -17,43 +16,51 @@ p {
         font-size: 16px;
         color: $black;
 }
-a.button {
-    background: no-repeat scroll top right;
-    color: #444;
-    display: block;
-    float: left;
-    font: normal 12px arial, sans-serif;
-    height: 24px;
-    margin-right: 6px;
-    padding-right: 18px; /* sliding doors padding */
-    text-decoration: none;
-}
+
 a:visited {
-        color: blue;
+        color: white;
 }
 .link {
-        color: blue;
-}
-.btn-primary {
-        color: $white;
-        border-color: $white;
-        margin-bottom: 5px;
+        color: white;
 }
 
 .scorecards {
         background-color: white;
-        margin-left: 25%;
-        margin-right: 25%;
+        margin-left: 20%;
+        margin-right: 20%;
         padding: 20px;
         border-radius: 15px;
 }
 
 .nav-bar {
+        text-align: center;
         background-color: $white;
         color: $black;
         margin-left: 25%;
         margin-right: 25%;
         margin-top: 20px;
-        padding-left: 12.5%;        
+        padding: 5px;
         border-radius: 15px;
+
+}
+
+.navbar-link {
+        background-color: #4CAF50; 
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 5%;
+      }
+.navbar-link:hover {
+        background-color: #00FF17;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 5%;
 }
