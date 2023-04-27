@@ -282,6 +282,7 @@ DEPENDENCIES
   rack-mini-profiler (~> 2.0)
   rails (~> 6.1.7)
   rails_12factor
+  rexml
   rspec-rails (~> 4.1.0)
   sass-rails (>= 6)
   selenium-webdriver (>= 4.0.0.rc1)
