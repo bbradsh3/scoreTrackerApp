@@ -1,6 +1,35 @@
 {
   "RSpec": {
     "coverage": {
+      "/root/scoreTrackerApp/app/models/user.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/root/scoreTrackerApp/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/root/scoreTrackerApp/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/root/scoreTrackerApp/app/helpers/rounds_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
       "/root/scoreTrackerApp/app/controllers/rounds_controller.rb": {
         "lines": [
           1,
@@ -122,22 +151,6 @@
         "branches": {
         }
       },
-      "/root/scoreTrackerApp/app/helpers/application_helper.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/root/scoreTrackerApp/app/helpers/rounds_helper.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
       "/root/scoreTrackerApp/app/jobs/application_job.rb": {
         "lines": [
           0,
@@ -160,29 +173,8 @@
         ],
         "branches": {
         }
-      },
-      "/root/scoreTrackerApp/app/models/application_record.rb": {
-        "lines": [
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/root/scoreTrackerApp/app/models/user.rb": {
-        "lines": [
-          0,
-          null,
-          null,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
       }
     },
-    "timestamp": 1682633812
+    "timestamp": 1682637434
   }
 }
