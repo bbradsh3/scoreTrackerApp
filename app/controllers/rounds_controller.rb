@@ -69,3 +69,12 @@ class RoundsController < ApplicationController
       params.require(:round).permit(:course, :weather, :date, :hole1, :hole2, :hole3, :hole4, :hole5, :hole6, :hole7, :hole8, :hole9)
     end
 end
+
+def search 
+  if params[:search].blank?
+    redirect_to rounds_path and return
+  else
+    @parameter = params[:search].downcase
+    @results = Round.all.where("lower(course) LIKE :search", search: "%#{@parameter}%")
+  end
+end

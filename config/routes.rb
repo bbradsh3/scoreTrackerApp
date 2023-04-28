@@ -8,4 +8,7 @@ Rails.application.routes.draw do
   # root "articles#index"
   root "rounds#index"
   resources :rounds
+
+  get '/search',to: "rounds#search"
+
 end
