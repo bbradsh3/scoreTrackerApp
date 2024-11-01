@@ -1,26 +1,13 @@
-# README
+# Disc Golf Score Tracker App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The Disc Golf Score Tracker App is a web application built to track scores for disc golf games. Players can log their scores, view game histories, and analyze performance trends. This app provides an easy-to-use interface for casual players and enthusiasts to keep track of their disc golf scores over time.
 
-Things you may want to cover:
+## Features
+- **Score Tracking**: Record scores for individual holes and save game results.
+- **Game History**: View a history of past games and scores.
+- **Performance Insights**: Analyze scores to identify improvements or trends.
 
-* Ruby version : ruby 3.0.2p107 (2021-07-07 revision 0db68f0233) [x86_64-linux-gnu]
-
-* Bootstrap version 5.2.3
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Tech Stack
+- **Backend**: Ruby on Rails for managing game data and API requests.
+- **Frontend**: HTML, CSS, and JavaScript for a responsive and intuitive UI.
+- **Database**: PostgreSQL for storing user and game data.
